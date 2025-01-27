@@ -13,7 +13,7 @@ spec:
     metadata:
       name: '{{`{{name}}`}}'
     spec:
-      project: default
+      project: argo-apps
       source:
         repoURL: https://dhenne.github.io/helm-charts/
         chart: spring-boot-helm-demo
@@ -23,7 +23,7 @@ spec:
             {{`{{values}}`}}
       destination:
         server: https://kubernetes.default.svc
-        namespace: default
+        namespace: argo
       syncPolicy:
         automated:
           prune: true

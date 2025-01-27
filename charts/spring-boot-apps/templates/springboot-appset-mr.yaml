@@ -27,10 +27,10 @@ spec:
           parameters:
             - name: 'spring-boot-helm-demo.image.tag'
               value: '{{`{{head_short_sha}}`}}'
-      project: default
+      project: argo-apps
       destination:
         server: https://kubernetes.default.svc
-        namespace: default
+        namespace: argo
       syncPolicy:
         automated:
           prune: true
