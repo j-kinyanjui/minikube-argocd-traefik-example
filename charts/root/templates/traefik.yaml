@@ -9,9 +9,9 @@ spec:
     namespace: argo
   project: argo-apps
   source:
-    repoURL: https://helm.traefik.io/traefik
+    repoURL: https://traefik.github.io/charts
     chart: traefik
-    targetRevision: 20.8.0
+    targetRevision: 34.1.0
     helm:
       values: |
         service:
