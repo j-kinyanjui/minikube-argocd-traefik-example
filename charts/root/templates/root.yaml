@@ -7,10 +7,10 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
-  project: default
+    namespace: argo
+  project: argo-apps
   source:
-    repoURL: https://github.com/dhenne/minikube-argocd-traefik-example.git
+    repoURL: https://github.com/j-kinyanjui/minikube-argocd-traefik-example.git
     path: charts/root
     targetRevision: HEAD
   syncPolicy:
